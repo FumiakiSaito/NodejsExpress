@@ -24,7 +24,28 @@ sampleディレクトリが作成され、必要なモジュールを含んだpa
 `$ sudo npm install`  
 
 サーバ起動  
-`$ node bin/www`
+`$ npm start`  
+※package.jsonの
+```
+ "scripts": {
+    "start": "node ./bin/www"
+  },
+```  
+が呼ばれている
 
 ブラウザでアクセス  
 http://[ホスト名]:3000/
+
+
+サーバーjsを更新したときに、再起動するようにnode-devをインストール  
+`$ sudo npm install -g  node-dev`  
+
+※package.jsonのstartをnode-devに変更  
+```
+ "scripts": {
+    "start": "node-dev ./bin/www"
+  },
+```  
+
+サーバ起動  
+`$ npm start`  

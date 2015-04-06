@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+// viewsのindex.jadeをレンダリング
 router.get('/', function(req, res, next) {
+  // titleをテンプレートに渡す
   res.render('index', { title: 'Express' });
 });
 
