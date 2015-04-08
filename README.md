@@ -25,7 +25,7 @@ sampleディレクトリが作成され、必要なモジュールを含んだpa
 
 サーバ起動  
 `$ npm start`  
-※package.jsonの
+※package.jsonの  
 ```
  "scripts": {
     "start": "node ./bin/www"
